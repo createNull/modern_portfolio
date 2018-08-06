@@ -1,7 +1,8 @@
 // Smartphones
 @include mediaSm {
   main {
-    padding-left: 0.5rem;
+    align-items: center;
+    text-align: center;
   }
   main .lg-heading {
     line-height: 1;
@@ -51,6 +52,7 @@
     grid-template-columns: 1fr;
   }
   .projects {
+    margin: auto;
     grid-template-columns: 1fr;
   }
 }
@@ -60,10 +62,11 @@
   main {
     align-items: center;
     text-align: center;
+    // padding-left: 0.5rem;
 
     .lg-heading {
       line-height: 1;
-      margin-bottom: 1rem;
+      margin-bottom: 2rem;
     }
   }
 
@@ -108,12 +111,17 @@
   }
 
   .projects {
+    margin: auto;
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 //Desktops & Laptops
 @include mediaLg {
+  main#contact {
+    align-items: center;
+    text-align: center;
+  }
   .projects {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -121,6 +129,11 @@
 
 // Widescreens
 @include mediaXL {
+  main#contact {
+    align-items: center;
+    text-align: center;
+  }
+
   .projects {
     grid-template-columns: repeat(4, 1fr);
   }
