@@ -188,6 +188,7 @@ main {
 
 .projects {
   display: grid;
+  width: 75%;
   grid-gap: 0.7rem;
   grid-template-columns: repeat(3, 1fr); }
   .projects img {
